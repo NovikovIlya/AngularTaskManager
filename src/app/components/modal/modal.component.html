@@ -1,0 +1,23 @@
+<p-button  (click)="showModalDialog()" >Добавить задачу</p-button>
+<p-dialog header="Добавьте новую задачу" [(visible)]="displayModal" [style]="{height: '100vh'}">
+  <div class="search">
+    <div class="hh">
+      <input
+      pInputText
+      type="text"
+      placeholder="Имя ответственного"
+      [(ngModel)]="name"
+    />
+    <input pInputText type="text" placeholder="Заголовок задачи" [(ngModel)]="title" />
+    <textarea rows="5" cols="30" pInputTextarea placeholder="Описание задачи" [(ngModel)]="description" ></textarea>
+    <div class="mix">
+      <span class="p-float-label">
+        <p-calendar dateFormat="dd.mm.yy" class="wh" [(ngModel)]="date" inputId="birth_date"></p-calendar>
+        <label for="birth_date">Дата дедлайна</label>
+      </span>
+      <p-dropdown [options]="cities" [(ngModel)]="selectedCity" optionLabel="name" [showClear]="true" placeholder="Приоритет"></p-dropdown>
+    </div>
+    </div>
+    <button class="btn" (click)="setData()">Добавить</button>
+  </div>
+</p-dialog>

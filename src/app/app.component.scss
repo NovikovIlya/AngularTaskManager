@@ -1,0 +1,36 @@
+.parent {
+  width: 100%;
+  height: 100vh;
+}
+.container {
+  width: 100%;
+  padding: 0 24px;
+
+  @media (min-width: 767px) {
+    width: 734px;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+}
+.headMain{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+.textHead{
+  color:var(--textColor);
+  cursor:pointer;
+  text-decoration: none;
+}
+.textHead2{
+  color:var(--textColor);
+  cursor: pointer;
+}
+
+.hed{
+  display:flex;
+  gap:5px;
+  user-select: none ;
+}

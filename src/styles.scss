@@ -1,0 +1,136 @@
+// Your global styles: imports, variables, etc.
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
+html,
+body,
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #0079ff;
+  --main-color-hover: #60abff;
+
+  --white: #fff;
+
+  --gray-50: #f6f8ff;
+  --gray-100: #697c9a;
+  --gray-200: #4b6a9b;
+  --gray-300: #2b3442;
+  --gray-400: #1e2a47;
+  --gray-500: #2f1426;
+
+  --error-color: #f74646;
+
+  --shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+}
+
+body[data-theme="light"] {
+  background-color: #f6f8ff;
+  --textColor: black;
+  --search: white;
+  --bgInfo: #f6f8ff;
+}
+
+body[data-theme="dark"] {
+  background-color: #141c2f;
+  --main-color: #ff794573;
+  --textColor: white;
+  --search: #1e2a47;
+  --bgInfo: #141d2f;
+}
+body[data-theme="light"] {
+  --info-color: var(--gray-200);
+}
+
+body[data-theme="dark"] {
+  --info-color: var(--gray-500);
+}
+
+app-root {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+.mt-25 {
+  margin-top: 25px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.gap-05 {
+  gap: 0.5rem;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.full-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+.p-datepicker {
+  scale: 0.5 !important;
+}
+.p-ripple {
+  // width: 100%;
+}
+.p-dropdown-clear-icon {
+  display: none;
+}
